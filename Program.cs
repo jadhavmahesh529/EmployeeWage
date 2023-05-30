@@ -4,7 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Employee Wage Computation Program");
+            {
+                Random random = new Random();
+                int attendance = random.Next(2);
+
+                if (attendance == 1)
+                {
+                    Console.WriteLine("Employee is Present");
+                }
+                else
+                {
+                    Console.WriteLine("Employee is Absent");
+                }
+            }
         }
     }
 }
