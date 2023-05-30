@@ -22,6 +22,15 @@
                 int dailyWage = wagePerHour * fullDayHours;
 
                 Console.WriteLine("Daily Employee Wage: $" + dailyWage);
+
+                int partTimeHours = 4;
+
+                int fullTimeWage = wagePerHour * fullDayHours;
+                int partTimeWage = wagePerHour * partTimeHours;
+
+                Console.WriteLine("Full-time Employee Wage: $" + fullTimeWage);
+                Console.WriteLine("Part-time Employee Wage: $" + partTimeWage);
+
             }
         }
     }
