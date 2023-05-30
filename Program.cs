@@ -30,8 +30,27 @@
 
                 Console.WriteLine("Full-time Employee Wage: $" + fullTimeWage);
                 Console.WriteLine("Part-time Employee Wage: $" + partTimeWage);
+                int workingDaysPerMonth = 20;
 
+                int monthlyWage = 0;
+
+                for (int day = 1; day <= workingDaysPerMonth; day++)
+                {
+                    switch (day % 3)
+                    {
+                        case 0:
+                            monthlyWage += partTimeWage;
+                            break;
+                        default:
+                            monthlyWage += fullTimeWage;
+                            break;
+                    }
+                }
+
+                Console.WriteLine("Monthly Employee Wage: $" + monthlyWage);
             }
+
         }
+        
     }
 }
