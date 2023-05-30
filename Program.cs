@@ -38,7 +38,7 @@
                 {
                     switch (day % 3)
                     {
-                        case 0:
+                        case 1:
                             monthlyWage += partTimeWage;
                             break;
                         default:
