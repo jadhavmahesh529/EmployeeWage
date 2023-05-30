@@ -48,9 +48,37 @@
                 }
 
                 Console.WriteLine("Monthly Employee Wage: $" + monthlyWage);
+
+                int workingHoursLimit = 100;
+                int workingDaysLimit = 20;
+
+                int totalWage = 0;
+                int totalWorkingHours = 0;
+                int totalWorkingDays = 0;
+
+                while (totalWorkingHours < workingHoursLimit && totalWorkingDays < workingDaysLimit)
+                {
+                    switch (totalWorkingDays % 3)
+                    {
+                        case 0:
+                            totalWage += wagePerHour * partTimeHours;
+                            totalWorkingHours += partTimeHours;
+                            break;
+                        default:
+                            totalWage += wagePerHour * fullDayHours;
+                            totalWorkingHours += fullDayHours;
+                            break;
+                    }
+
+                    totalWorkingDays++;
+                }
+
+                Console.WriteLine("Total Monthly Employee Wage: $" + totalWage);
             }
 
         }
+
+        
         
     }
 }
