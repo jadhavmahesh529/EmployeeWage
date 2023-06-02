@@ -14,7 +14,7 @@ namespace EmployeeWage
         public static int workingDaysPerMonth = 20;
         public static int workingHoursLimit = 100;
         public static int workingDaysLimit = 20;
-        public static void Main(string[] args)
+        public  void Main(string[] args)
         {
             Random random = new Random();
             int attendance = random.Next(2);
